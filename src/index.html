@@ -8,5 +8,54 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <main class="dashboard">
+            <section class="result">
+                <p class="result__password">QWERTY</p>
+                <span class="result__copy fa-solid fa-copy"></span>
+            </section>
+            <section class="options">
+                <div class="length">
+                    <p class="length__name">Character Length</p>
+                    <p class="length__value">10</p>
+                </div>
+                <form class="form">
+                    <input type="range" class="form__range" min="4" max="16" step="2" value="10">
+                    <div class="form__checkbox">
+                    <label class="form__input-name">
+                        <input type="checkbox">
+                        <span class="form__checkbox-input"></span>Include Uppercase Letters
+                    </label>
+                    <label class="form__input-name">
+                        <input type="checkbox" checked>
+                        <span class="form__checkbox-input"></span>Include Lowercase Letters
+                    </label>
+                    <label class="form__input-name">
+                        <input type="checkbox">
+                        <span class="form__checkbox-input"></span>Include Numbers
+                    </label>
+                    <label class="form__input-name">
+                        <input type="checkbox">
+                        <span class="form__checkbox-input"></span>Include Symbols
+                    </label>
+                    </div>
+                </form>
+                <div class="strength">
+                    <p class="strength__name">Strength</p>
+                    <div class="strength__level">
+                        <p class="strength__level-name">Medium</p>
+                        <div class="strength__level-indicator">
+                            <div class="strength__level-point"></div>
+                            <div class="strength__level-point"></div>
+                            <div class="strength__level-point"></div>
+                            <div class="strength__level-point"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="generate-btn">Generate<i class="generate-btn__icon fa-solid fa-arrow-right"></i></button>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
