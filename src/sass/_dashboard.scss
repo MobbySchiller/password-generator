@@ -27,8 +27,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 70px;
         margin-bottom: 12px;
-        padding: $padding-container;
+        padding: 0 18px;
         border-radius: $radius;
         background-color: $dashboard-color;
 
@@ -113,15 +114,15 @@
             margin-left: 4px;
             box-shadow: 0 0 0 1px $light-font-color;
 
-            &--bad {
+            &--red {
                 background-color: $indicator-bad;
             }
 
-            &--good {
+            &--yellow {
                 background-color: $indicator-good;
             }
 
-            &--great {
+            &--green {
                 background-color: $indicator-great;
             }
         }
