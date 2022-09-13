@@ -12,7 +12,7 @@
         <h1 class="title">Password Generator</h1>
         <main class="dashboard">
             <section class="result">
-                <p class="result__password">QWERTY</p>
+                <p class="result__password"></p>
                 <span class="result__copy fa-solid fa-copy"></span>
             </section>
             <section class="options">
@@ -24,19 +24,19 @@
                     <input type="range" class="form__range" min="4" max="16" step="2" value="10">
                     <div class="form__checkbox">
                     <label class="form__input-name">
-                        <input type="checkbox">
+                        <input type="checkbox" data-key="uppercase">
                         <span class="form__checkbox-input"></span>Include Uppercase Letters
                     </label>
                     <label class="form__input-name">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" data-key="lowercase" checked>
                         <span class="form__checkbox-input"></span>Include Lowercase Letters
                     </label>
                     <label class="form__input-name">
-                        <input type="checkbox">
+                        <input type="checkbox" data-key="numbers">
                         <span class="form__checkbox-input"></span>Include Numbers
                     </label>
                     <label class="form__input-name">
-                        <input type="checkbox">
+                        <input type="checkbox" data-key="symbols">
                         <span class="form__checkbox-input"></span>Include Symbols
                     </label>
                     </div>
