@@ -14,12 +14,13 @@ let results = {
     maxRandom: null,
     maxRandomLowercase: null,
     drawedCharacters: [],
-    password: [],
+    password: null,
 }
 
 const htmlElements = {
     passwordSign: document.querySelector('.result__password'),
     passwordCopyBtn: document.querySelector('.result__copy'),
+    passwordCopySign: document.querySelector('.result__copy-active'),
     inputRange: document.querySelector('.form__range'),
     inputsCheckbox: [...document.querySelectorAll('[data-key]')],
     lengthSign: document.querySelector('.length__value'),
@@ -189,8 +190,11 @@ const drawSymbols = (amount) => {
 
 // COPY PASSWORD
 const copyPassword = () => {
-    htmlElements.passwordSign.select();
-    // document.execCommand("copy");
+    if (results.password) {
+        navigator.clipboard.writeText(results.password);
+        htmlElements.passwordCopySign.style.display = 'block';
+        setTimeout(() => { htmlElements.passwordCopySign.style.display = 'none' }, 1000);
+    }
 }
 
 

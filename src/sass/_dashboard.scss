@@ -40,6 +40,7 @@
         }
 
         &__copy {
+            position: relative;
             color: $glowing-font-color;
             font-size: 2rem;
             cursor: pointer;
@@ -48,6 +49,15 @@
                 color: darken($glowing-font-color, 10%);
             }
         }
+
+        &__copy-active {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: -11px;
+            font-size: 0.9rem;
+        }
+
     }
 
     .options {
