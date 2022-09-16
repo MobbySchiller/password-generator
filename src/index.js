@@ -15,7 +15,7 @@ let results = {
     maxRandomLowercase: null,
     drawedCharacters: [],
     password: null,
-}
+};
 
 const htmlElements = {
     passwordSign: document.querySelector('.result__password'),
@@ -201,7 +201,7 @@ const copyPassword = () => {
 // INIT
 const init = () => {
     checkRequirements();
-}
+};
 
 init();
 
